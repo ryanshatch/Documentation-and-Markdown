@@ -1,2 +1,171 @@
-# Documentation-and-Markdown
-Personal paste-bin for instructions and documentation.
+<h1><center>How to use PGP encryption<br>(Instructions for ios app OpenPGP.)</center></h1>
+
+This was the reason I couldnt use Agora when I was younger, I didnt have someone who could explain to me wtf and how tf to do this. Ended up sending my private key to a vendor and getting question marks sent back lol I withdrew my btc then and rage quit.
+
+<li>ChatGPT gave me very helpful detailed instructions mainly tailored towards the ios app which seems to be rock solid for this function.</li><br>
+
+<strong>Search <code>encrypt</code> in the appstore and look for PGPro by OpenPGP.</strong><br>
+https://github.com/ryanshatch/ryanshatch/blob/main/images/PGPro.jpg
+
+---
+
+---
+
+<h2><center>Conversation/ Instructions:</center></h2>
+
+> <br><strong>Prompt:</strong> is it only email or any text?<br><br>
+
+> <br><strong>ChatGPT:</strong> PGP encryption can be used for any text, not just email. While PGP is commonly associated with email encryption, it's actually a versatile tool that can encrypt any form of text data. Here's how it works for different types of text:<br>
+>
+> 1. **Email**: This is the most common use case. You can encrypt the body of an email before sending it. The recipient, who has your public key, can then decrypt the message.
+> 2. **Text Messages or Chat**: You can encrypt a text message or a chat message using PGP before sending it through any messaging platform. The recipient can decrypt it using their private key.
+> 3. **Files**: PGP can also encrypt text files. If you have a document, you can encrypt the entire file and then send it securely. The recipient can decrypt it with the appropriate key.
+> 4. **Any Textual Data**: Essentially, any textual data that can be copied and pasted or written into the PGP application can be encrypted. This includes messages in social media, notes, or even code.<br><br>
+>    When using PGP with non-email text, you typically have to handle the encryption and decryption manually. This means you would use PGPpro or a similar app to encrypt the text, then copy and paste the encrypted message into your messaging platform or text file. The recipient would then have to copy the encrypted text into their PGP tool to decrypt it with their private key.<br><br>
+
+> <br><strong>Prompt:</strong> In simple terms how does someone use the app for ios called PGPpro?<br><br>I tried to use PGP encryption when I was younger via kleopatra and openpgp and never could figure it out.<br><br>
+
+> <br><strong>ChatGPT:</strong> Using PGP (Pretty Good Privacy) encryption on iOS with an app like <code>PGPpro</code> involves a few straightforward steps. Here's a simplified guide:<br>
+>
+> 1. **Download and Install the App**: First, download PGPpro from the iOS App Store and install it on your device.
+> 2. **Generate a Key Pair**: Open the app and create a new key pair. This will include a public key and a private key. The public key is what you share with others so they can encrypt messages to you, while the private key is kept secret and used to decrypt messages you receive.
+> 3. **Share Your Public Key**: Share your public key with people you want to communicate with securely. You can do this via email or any other method of communication.
+> 4. **Import Others' Public Keys**: If someone else wants to send you an encrypted message, you'll need their public key. Import their public keys into your PGP app.
+> 5. **Encrypting Messages**: To send an encrypted message, compose your message in the app and select the recipient's public key for encryption. The app will encrypt the message, which can then be sent via email or another messaging service.
+> 6. **Decrypting Messages**: When you receive an encrypted message, use your private key to decrypt it. The app should handle this automatically as long as you have the sender's public key and your private key is secure in the app.
+> 7. **Signing Messages**: You can also use your private key to digitally sign messages. This ensures the recipient that the message genuinely came from you.<br><br>
+>    Remember, the key to using PGP effectively is the careful management of your keys. Keep your private key secure and only share your public key. Regularly back up your keys to avoid losing access to your encrypted communications.<br><br>
+
+> <br><strong>Prompt:</strong> but to generate a key pair I need an email?<br>https://github.com/ryanshatch/ryanshatch/blob/main/images/generatekeys.jpg<br><br>
+
+> <br><strong>ChatGPT:</strong> No, you don't necessarily need an email address to generate a key pair for PGP encryption. The email field is typically used to associate your key pair with your email identity, which is useful for email encryption, as it allows others to easily identify and trust that the key belongs to you.<br><br>
+> If you plan to use PGP for encrypting other types of text or data not associated with email, you can often enter a placeholder or even leave the email field blank, depending on the application's requirements. However, entering a valid email address is a good practice for identity verification and key management purposes, especially if you'll be sharing your public key with others for communication.<br><br>
+
+<br>
+
+---
+
+<br>
+
+---
+
+<h2><center>Below is my public key so you can decrypt my messages.</center></h4>
+<h4><strong><center>For me to decrypt your messages you have to send me your PUBLIC key.
+
+(Never share your private key)</strong></center></h4>
+
+---
+
+<br>
+
+---
+
+<br><br>
+
+<pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: ObjectivePGP
+Comment: https://www.objectivepgp.com
+Charset: UTF-8
+
+xsDNBGVXhtIBDADavmuiao9PnpPxbZcsWkcWtzS2XpyRphgAS0dO3/leThoVB+5sGZUYEu0umLE6
+M+rpI9W6ewv9wCKLXeLh277Mvuxq55OMPlxfaIoWr+j2moa/K8ePCHyAMClPKkkLpWbCGeLF2KQ9
+tb52iA7JmbqCm0QPt5K0O0miWQ80M1RDoZYhDpvGn6cKSz5G9BLRFDWDux7wClyCU0oX4LuHL2xK
+k6D0R/ovSBSpJ9LhUJB7ZmQ38u/aRJJbvPAlA+PNkt2mpVUcRPLjNlmU0IEBKbgxeX+2ocSanMlZ
+Etyp0oTrpRxGFtKXzIV1vcLC7abkinIo9SqBgmkk3VJHHOIzr6qbFSpJq7OnwtYU6rHjmS27ut+p
+X8wCxvUc7eZ/5t/CnF0EfXPstCTFpWwUnK3RHWm2A+Mt9rY1N58MrvDdHvkDzeNOeDhGjIoM+MW4
+COof9zyQ2fPif3O5qjaCBW06ZCVoGoJ75t2kJE5wbkqN1PVAoGdbRGwcppMhqF5Oao8y+fkAEQEA
+Ac0gYmFuYW5hIDx6ZW5vbi5rLnNpbHZhQGdtYWlsLmNvbT7CwPoEEwEIACQFAmVXhtICGwMEFQgJ
+CgcLCQgHAwIBBBYDAgECHgECF4ACGQEACgkQSUE8hHxeZ22OiAv+LPOrCry6aptZ4D5tZYWCz1KI
+3wVwUZHE2bhlV2hVv/X4nLjKKQiaBCVBTHO/5xf5PiwcC0jDaJGh9UhPJyky+KDJAb+C+7WOL/VS
+w2/olyYUDXBT55oQ+AxtRCaovPiWIEHrSD3mqcvdJdeW5C0lGY/KrNx1rzGC0ykhxrk1Slkz3wZv
+UgtxiApCgKwJ636uiSfnMb3AMNzST/eGt1zCNe2nOs47zSHQ9g65+Mbr7mfhLfNP8RTXYCHO3psu
+UW9k4/g2ZwQaelchKT+OkJ8e8UEnHvVoWZQOaL3Qz3eGBov1FjAaMwmcoajij0L0r2XWN5QxtNxg
+dPkswlSSHDgPz99TDxlvFUKWnGAX63lOZ4TVfsmMJbtCUhz5GW6XnLx0uHJ7vespWAi+pqnzkRWN
+WuYMtqWrK8VuX25IWl/6+e+VIF1h9QRYKYdHpAHjPgXyp12QPFfdFTSvgSUPr5t+rIIxMOdf04+b
+/DP+BcBPw20U38RdCXWrcHn5JZN3tow+zsDNBGVXhtIBDADKn3y6CDH3OebeWU8Uuw5veDGyecbZ
+FNy5J4SdPGQSK/jEvFUcEsXIME7XsclHlyTJz3/Cyr3P//DTMs+9LHukoN5O2Z6Isvitqa1JxYlU
+ztRxPXNizSe2dc3Aw9i0xOXjra3eSXR7aWzcwHjaQJkfIcOxmHKKuNtRGAspS1e5zNOT2k1QgSRf
+OtP33jYBwRRJfNMzm7Xdy0tQ8maz8AGdQUhfw2dBTLlDbJB1TQs+pdrV1Mz6pYHMgQKBaZkGDxog
+UmAQ+1OF1UywAquUs/+gNr1NDBF7Eoz2/OSads7fnjFfbP/jgWSWSidDWg3JBYJ3jIRVOoIuPxfx
+m+vWZPSV1Az7zIL1U+2xskbZCxPEUFGDEMgl1vz0Y4OS5ahUsblTyAtoWtPzsLXo0jvqZ3m2lscV
+qp3W/17qknzjLJMw4rxy9nmlNWR0QnbYCWlgpSDAGJFLfAL2xtyKPdatnek29ErYdGdBYJNWIzZd
+uty1YOcBrJ6sYNi4kCagb1vpOAMAEQEAAcLCfgQYAQgBqAUCZVeG0wIbDMDdIAQZAQgABgUCZVeG
+0wAKCRCJdfspDKZHVLa5C/0di5zxer1MyD9GwUzCRgiYbkrYfbnMncnYE9oxXnTgkjsts3jzNqQ6
+ZaTvOoIi+0G+aCzpRZdeBUvQ3wLJsFy5u0Zng8DQkr1PWx3dX0euvXgX++BwUiBJY4DHE9jj+dbR
+gdETUlyW+jfcUF4FFywBjnpkwzvZgfbcDfnxWo6BYlgxakj+sotw2bUpfphIzX41sWsmExqsMURm
+l0d6OdieAA0fEmi3EYuyFzkGi3WK0u7EsMS0/KN0U7Uyg4GAtwzSo4fR/7iGO/HlfTNKUcrUuP/z
+1JUzXB6HnPc4BOoQrVpEb9s+JiYh4QOLBMrE+yHyGhtFo3cIqLAIbnGIl1sjmeCLELZ50lUJBxTq
+Y2ZqT+jMVQqEKVexMeIQa8Ol4LVlEqumvaQsf2T6onikzG7tH78xM42eUSdUclbKOuQY5OnGNOrM
+zEoSTFGPQDU50ySk8djJMgNQ9znMNcYMOvd86gFs9JA/WIDw4rywJylFnRPVyBet4ntqMNdEFipG
+V6MACgkQSUE8hHxeZ20CDAv/R9i0tO1oIFN2cLHBJvOhl1pTgt3Zwq3NdUAGsMLD8V3H8Y5OwZ7y
+Y3/m6yc+fC8Pcyp7oSHXb5dvpYW3Er28cznfw/CYAswPt7DUu45WR2ZoJLNShq2QLvMsnAGPTTdd
+ykNSOyXi+iVqi1xO2qwYtLWpENcOV6WgYPCOpaECw9OJLBR/D+dfMl15RiplZVkEBYSP0fzEyDZH
+DMtBzhvxLyY/9t9obv0vEXMSEr1ewM71/CnZBSBI+nJ2ODohx1TiRDrRvcgDRuvU8BLxYhkH7uKQ
+lnq7q8FU0CpIUdOarnknc6xOzxCIujx+ecGRpCHU66pvicMifC6dFrtsHsSEv4hXeBHvbGa3QmE5
+iVHyq2acwI30+LhiKQ9WjOehnDNNABM99gYcLscgAvKFaOWWShADze+HGhHphDXiWzKU+15UEyzI
+wz15IZo4NNDnXlbSWky9XiqsFgx2M87NmvPMiyQIY2Pi+yuWcmTAw68cLHCWOsMoj8C95X9ClG7X
+rqcy
+=N8Qe
+-----END PGP PUBLIC KEY BLOCK-----</pre></code>
+
+<br>
+
+---
+
+<br>
+
+---
+
+<h2><center>Below is a test encrypted message that should say<br><code>test complete!</code> when decrypted with my public key.</center><br></h2><br>
+
+---
+
+<br>
+
+<pre><code>-----BEGIN PGP MESSAGE-----
+Version: ObjectivePGP
+Comment: https://www.objectivepgp.com
+Charset: UTF-8
+
+wcDMA4QiSq5GinFxAQwAp9m6JIgLTlZnvy3s0nVBIhU8WwbbKFwe1e93IqWPZ/5R+QjJjIJv4ywB
+ATAUqdZyku++U5prDhqcdGt8ED/ih53rzP9vUmp6WSKFnkPwNLtY0tN3OVVNrTLC+aGmgOnwjow/
+UhlzDq6qESSzWRlMPwue2uc/4bLUilg5OyttbMJlVtE+arivLzcLlwP1VVMML85OqVq2an/IZ/i3
+v9OnDtoWQAJlJxE91QaEqX3m03qVGmD33/4GPA7QdZejgBSgyYIPs3J2m4NoBvLN1khy5JcaQ1Wx
+UOcZuhiyYj0XQkV8ZzJj/zUA4TZ3zrNAMz7ucaDsxLIFJX/Msni4QJh3JdjRTlEnYfcbNwwZ3go8
+8NdElxz8eP1YHCROhWzVNt4xJiIZZUM5dmlX1NuZYbp5vT1PJpdYHwnRwvi6sUbef54sL6KjTKrB
+XMuZCMziBTfjpsxGXntZ97mgHU1FvdDDCJGkOavLVkX6w/USnXC7/T3KaDf2D8uqkP1DOx97try7
+wcDMA4l1+ykMpkdUAQwAh9TsQdn7G7ImmQqEEVk014eb2JEWERsSioocqTPwwgm42bGq+TzYV1Hh
+oB1Bgr1DsNpSY4s59SieT1GNrnoUov6ReXGiaCN24nh3WlD5bJ4OjkSmhbQvb0lUjg+DBgktdZUQ
+w/kDiHx0lHKOeowFlq/RGFhbrMB7g8sf8mMDtOWlWpeOmUpSJh1FIrkrTCSR/adY3ySnuIgynA9r
+ZplyDoE4hsQdEDalUA3UJMYCTzC5aCXsiPjMnS+0oUgZ+9MYw2FI+NoIF551pMs6sD6gfM2QuX+V
+l8vVEZ42NNsOBuDeVoABpOLFNidqZGrUxmpb5M41aB8easoW/WioR18+1FqmDALgWhVhC/LRNzwl
+rgq1JgAJOAmtBSrm4lvQx3JhCHVfifMxUS/AYEaJ2fZCMmjCEYeewRyih1Q6x36A/NC2x8xU274D
+AgQaGaJXARn8FXvWtFIsP7ADZmGb/0KIfdyIFsnE+/y3XAoJECyQRtpfS9dYDF3dHgteEyvIZcA1
+0sEtAZIcDHqqO45Xq7rxRFPHOYFfmPOw73TEW/9aAScDCCZ9XoaVvSXBKqOApeXFPQWuOxJ/3YlW
+rWu1HIQoGPemEnqu5cYmFlAEKvATCaWEEmMxbgvCQUtz9c4PihSu3stWFm+ki9itCYQUBdjHV8x0
+Ifrjd7n14MnI1mpDYlrwE4ooRI9MGRBI+zEz7Axf6JbtQGQcaNrLHmv+LtFWWjdWfYhNpAb96NSV
+rLjI804Tf2HBtLsgjBLlHRaxCLKeBcHFZxnWjhXMzU4v+BS0fPTb4Oos6fFJUmaMH3VUjHt/izY4
+sBgfFNquMlrqjce9C7pmlqKPRMU9pbHlRkKXW0BzWtRTBz4JwXqaYfBrhYg198dse39Xsmt6jA4Y
+bsudWoRMOlIUBzLB1qqAH7clAaFYLRhL9TzJq1jtbKyU9IWBS9WOo7lFpNbnpgsQCF3qr2e/rv5U
+l81GBqepTWBuKM2jKX6c5u2TQlTnwS7eJ/tWTHiIRls4RxlOkMaxYRSwOWojilW8DW16lvFK+ih7
+CNj3AiqeZ5lZZh9/BMIPoUAAcmpSWxEyy858IuYgQcmEOnVJcTi2fgew4ubChVGjNHOhJc7YawWd
+FaZtUhXkuq0cC9cO0ltselGBqyAwM28PxWJidt4MCyI2hmpAUWg/PQ==
+=NqIc
+-----END PGP MESSAGE-----</pre></code>
+
+<br>
+
+---
+
+<br>
+
+---
+
+<h2><center>Example of what the output should look like:</center><br></h2>
+
+<h4><pre><code><center><a href="https://github.com/ryanshatch/ryanshatch/blob/main/images/example.jpg">test complete!</a></pre></code>
+<br>
+
+---
+
+<br>
